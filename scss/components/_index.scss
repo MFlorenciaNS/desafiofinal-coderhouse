@@ -2,21 +2,38 @@
 
 main{
     .index-section{
-        background-color: $color-lilac-background;
-        padding: 2% 3% 2% 3%;
         margin-bottom: 3%;
-        border: 2px dotted $color-violet-femi;
-        .index-div{
-            .index-heading {
-                margin-bottom: 2%;
-                text-align: center;
+        
+        .index-div1{
+            display: flex;
+            align-items: baseline;
+            margin-top: 1em;
+            border-bottom: 1em solid $color-green-femi;
+            @media screen and (max-width: 980px) {
+                margin-top: 1em;
             }
             .index-text {
                 text-align: justify ;
             }
         }
+        .index-div2{
+            margin-top: 0;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
     }
-    .index-post-images {       
+    .index-post-images {
+        .post-div1{
+            display: flex;
+            align-items: baseline;
+            margin-top: 1em;
+            border-bottom: 1em solid $color-green-femi;
+        }
+    }
+    .post-div2{
+        padding-top: 3%;
+        padding-bottom: 3%;
+       
         .row-post{
             div {
                 .post-image-a {

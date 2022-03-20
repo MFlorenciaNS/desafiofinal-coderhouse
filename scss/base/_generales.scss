@@ -12,7 +12,7 @@ p {
     font-size: 15px;
 }
 
-.newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post, .index-heading{
+.newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post {
     font-family: $font-heading;
     color: $color-violet-femi;
     font-size: 32px;
@@ -20,31 +20,34 @@ p {
     margin-bottom: 2%
 }
 
+.heading-t1 {
+    font-weight: bolder;
+    color: $color-green-femi;
+    font-size: 60px;
+    line-height: 0;
+    font-family: $font-heading;
+}
 .newsletters-heading-2, .integrantes-heading-2{
     font-family: $font-heading;
     font-size: 28px;
     color: $color-green-yellow-femi;
 }
 
-.posts-heading-2 {
-    font-family: $font-heading;
-    font-size: 28px;
-    color: $color-green-yellow-femi;
-    text-align: center;
-    margin-bottom: 2%;
-}
+p::selection, strong::selection, i::selection, br::selection,h1::selection, h2::selection, .heart::selection, a::selection{
+    background-color: #874F9D;
+    color: #D9D7F1;
+  }
 
-/*General media queries*/
+  /*General media queries*/
 /*Main headings & texts size: mobile*/
 @media screen and (max-width: 480px){
-    .newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post, .index-heading {
+    .newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading {
         font-size: 25px;
         text-align: center; 
     }  
-    .index-heading {
-        font-size: 20px;
-        margin-bottom: 2%;
-        text-align: center;
+    
+    .heading-t1{
+        font-size: 35px;
     }
 
     .index-text{
@@ -64,17 +67,16 @@ p {
 
 /*Main headings & texts size: tablet*/
 @media screen and (min-width: 481px) and (max-width: 980px){
-    .newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post, .index-heading {
+    .newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post {
         font-size: 25px;
         text-align: center; 
     }
-    .index-heading {
-        font-size: 25px;
-        margin-bottom: 2%;
-        text-align: center;
-    }
+   
     .newsletters-heading-2, .integrantes-heading-2{
         font-size: 25px;
+    }
+    .heading-t1{
+        font-size: 45px;
     }
 }
    

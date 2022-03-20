@@ -119,24 +119,43 @@ footer .social-media .logo-social {
   }
 }
 main .index-section {
-  background-color: #D9D7F1;
-  padding: 2% 3% 2% 3%;
   margin-bottom: 3%;
-  border: 2px dotted #874F9D;
 }
-main .index-section .index-div .index-heading {
-  margin-bottom: 2%;
-  text-align: center;
+main .index-section .index-div1 {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1em;
+  border-bottom: 1em solid #3FB6B0;
 }
-main .index-section .index-div .index-text {
+@media screen and (max-width: 980px) {
+  main .index-section .index-div1 {
+    margin-top: 1em;
+  }
+}
+main .index-section .index-div1 .index-text {
   text-align: justify;
 }
-main .index-post-images .row-post div .post-image-a .post-image {
+main .index-section .index-div2 {
+  margin-top: 0;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+main .index-post-images .post-div1 {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1em;
+  border-bottom: 1em solid #3FB6B0;
+}
+main .post-div2 {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+main .post-div2 .row-post div .post-image-a .post-image {
   width: 100%;
   margin-top: 3%;
   margin-bottom: 3%;
 }
-main .index-post-images .row-post div .post-image-a .post-image:hover {
+main .post-div2 .row-post div .post-image-a .post-image:hover {
   transform: scale(1.06);
   transition: all 1s;
 }
@@ -293,12 +312,20 @@ p {
   font-size: 15px;
 }
 
-.newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post, .index-heading {
+.newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post {
   font-family: "Arimo", sans-serif;
   color: #874F9D;
   font-size: 32px;
   text-align: center;
   margin-bottom: 2%;
+}
+
+.heading-t1 {
+  font-weight: bolder;
+  color: #3FB6B0;
+  font-size: 60px;
+  line-height: 0;
+  font-family: "Arimo", sans-serif;
 }
 
 .newsletters-heading-2, .integrantes-heading-2 {
@@ -307,26 +334,21 @@ p {
   color: #4FAC24;
 }
 
-.posts-heading-2 {
-  font-family: "Arimo", sans-serif;
-  font-size: 28px;
-  color: #4FAC24;
-  text-align: center;
-  margin-bottom: 2%;
+p::selection, strong::selection, i::selection, br::selection, h1::selection, h2::selection, .heart::selection, a::selection {
+  background-color: #874F9D;
+  color: #D9D7F1;
 }
 
 /*General media queries*/
 /*Main headings & texts size: mobile*/
 @media screen and (max-width: 480px) {
-  .newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post, .index-heading {
+  .newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading {
     font-size: 25px;
     text-align: center;
   }
 
-  .index-heading {
-    font-size: 20px;
-    margin-bottom: 2%;
-    text-align: center;
+  .heading-t1 {
+    font-size: 35px;
   }
 
   .index-text {
@@ -348,19 +370,17 @@ p {
 }
 /*Main headings & texts size: tablet*/
 @media screen and (min-width: 481px) and (max-width: 980px) {
-  .newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post, .index-heading {
+  .newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post {
     font-size: 25px;
-    text-align: center;
-  }
-
-  .index-heading {
-    font-size: 25px;
-    margin-bottom: 2%;
     text-align: center;
   }
 
   .newsletters-heading-2, .integrantes-heading-2 {
     font-size: 25px;
+  }
+
+  .heading-t1 {
+    font-size: 45px;
   }
 }
 .disclaimer {
