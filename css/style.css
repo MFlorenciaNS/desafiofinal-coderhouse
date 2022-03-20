@@ -13,24 +13,36 @@ header {
 }
 
 /*header*/
-header nav .navbar-femi {
+header .section-nav {
+  margin-bottom: 2%;
+}
+header .section-nav nav .navbar-femi {
   margin-right: 10%;
 }
-header nav .navbar-femi .navbar-brand .logo-femiciencia {
+header .section-nav nav .navbar-femi .navbar-brand .logo-femiciencia {
   margin: 10%;
 }
-header nav .navbar-femi .button-femi {
+@media screen and (max-width: 480px) {
+  header .section-nav nav .navbar-femi .navbar-brand .logo-femiciencia {
+    width: 70%;
+  }
+}
+header .section-nav nav .navbar-femi .navbar-brand .logo-femiciencia:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+header .section-nav nav .navbar-femi .button-femi {
   background-color: rgba(211, 228, 205, 0);
   border-color: #3FB6B0;
   border-width: 3px;
 }
-header nav .navbar-femi .button-femi .span-femi {
+header .section-nav nav .navbar-femi .button-femi .span-femi {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(63, 182, 176, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-header nav .navbar-femi .collapse-femi .navbar-nav .nav-item {
+header .section-nav nav .navbar-femi .collapse-femi .navbar-nav .nav-item {
   margin: 0 3%;
 }
-header nav .navbar-femi .collapse-femi .navbar-nav .nav-item .text-menu {
+header .section-nav nav .navbar-femi .collapse-femi .navbar-nav .nav-item .text-menu {
   color: #874F9D;
   font-family: "Arimo", sans-serif;
   font-size: 1em;
