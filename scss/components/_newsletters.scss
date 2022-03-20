@@ -1,0 +1,56 @@
+/*newsletters*/
+@import '../base/variables';
+
+main {
+    section{
+        div{
+            .columna-1{
+                    &:hover{
+                        background-color: #C0D9BE;
+                    }
+                    .link-newsletters{
+                        color: $color-violet-femi;
+                        text-decoration: none;
+                        font-weight: bold;
+                        
+                    }
+                    padding: 2%;
+            }
+        }
+    }
+}
+
+.body-news-individuales{
+    background-color: $color-lilac-background;
+    main{
+        section {
+            div{
+                .columna-news {
+                    .preguntas-news {
+                        text-align: center;
+                        font-weight: bold;                
+                    }
+                    .linea-divisoria{
+                        height: 3px;
+                        background-color: $color-green-femi;                
+                    }
+                }
+            }
+        }
+        .boton-news-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 5%;
+            margin-top: 3%;
+
+            .boton-news-img{
+                &:hover {
+                    box-shadow: 0 4px 16px rgba(179, 158, 226, 1);
+                    transition: all 0.2s ease;                
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import '../base/mixins';
+
+/*quienes somos*/
+
+main{
+    section{
+        div{
+            div{
+                .integrante {
+                    @include integrante (flex, center, 1% 0 1% 0, center);
+                    .image-integrante{
+                        width: 150px;
+                        height: 150px;
+                    }
+                    .text-integrante{
+                        margin: 0 2% 0 2%;
+                        padding: 2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.integrante-1, .integrante-3, .integrante-5, .integrante-7{
+    background-color: #C0D9BE;
+}
+    
+.integrante-2, .integrante-4, .integrante-6{
+    background-color: #ADCEAE;
+}

@@ -1,0 +1,84 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: $color-green-background;
+}
+
+p {
+    font-family: $font-paragraph;
+    font-size: 15px;
+}
+
+.newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post, .index-heading{
+    font-family: $font-heading;
+    color: $color-violet-femi;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 2%
+}
+
+.newsletters-heading-2, .integrantes-heading-2{
+    font-family: $font-heading;
+    font-size: 28px;
+    color: $color-green-yellow-femi;
+}
+
+.posts-heading-2 {
+    font-family: $font-heading;
+    font-size: 28px;
+    color: $color-green-yellow-femi;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+/*General media queries*/
+/*Main headings & texts size: mobile*/
+@media screen and (max-width: 480px){
+    .newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post, .index-heading {
+        font-size: 25px;
+        text-align: center; 
+    }  
+    .index-heading {
+        font-size: 20px;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+    .index-text{
+        text-align: justify;
+        font-size: 16px;
+    }
+    .text-integrante>p, .newsletter-div>p {
+        font-size: 16px;
+    }
+    .integrantes-heading-2{
+        font-size: 25px;
+    }
+    .newsletters-heading-2{
+        font-size: 20px;
+    }
+}
+
+/*Main headings & texts size: tablet*/
+@media screen and (min-width: 481px) and (max-width: 980px){
+    .newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post, .index-heading {
+        font-size: 25px;
+        text-align: center; 
+    }
+    .index-heading {
+        font-size: 25px;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    .newsletters-heading-2, .integrantes-heading-2{
+        font-size: 25px;
+    }
+}
+   
+
+.disclaimer {
+    display: none;
+}
