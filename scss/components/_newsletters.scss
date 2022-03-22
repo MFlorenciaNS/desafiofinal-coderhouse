@@ -2,6 +2,13 @@
 @import '../base/variables';
 
 main {
+    .news-div1{
+        display: flex;
+        align-items: baseline;
+        margin-top: 1em;
+        border-bottom: 1em solid $color-green-femi;
+        margin-bottom: 2%;
+    }
     section{
         div{
             .columna-1{
@@ -23,6 +30,13 @@ main {
 .body-news-individuales{
     background-color: $color-lilac-background;
     main{
+        .news-ind-div1{
+            display: flex;
+            align-items: baseline;
+            margin-top: 1em;
+            border-bottom: 1em solid $color-violet-femi;
+            margin-bottom: 2%;
+        }
         section {
             div{
                 .columna-news {
@@ -40,14 +54,14 @@ main {
         .boton-news-div{
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: flex-end;
             margin-bottom: 5%;
             margin-top: 3%;
 
             .boton-news-img{
                 &:hover {
-                    box-shadow: 0 4px 16px rgba(179, 158, 226, 1);
-                    transition: all 0.2s ease;                
+                    transform: scale(1.2);
+                    transition: all 1s;                
                 }
                 
             }

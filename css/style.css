@@ -139,11 +139,6 @@ main .index-section .index-div1 {
   margin-top: 1em;
   border-bottom: 1em solid #3FB6B0;
 }
-@media screen and (max-width: 980px) {
-  main .index-section .index-div1 {
-    margin-top: 1em;
-  }
-}
 main .index-section .index-div1 .index-text {
   text-align: justify;
 }
@@ -197,6 +192,13 @@ main section div div .integrante .text-integrante {
 }
 
 /*newsletters*/
+main .news-div1 {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1em;
+  border-bottom: 1em solid #3FB6B0;
+  margin-bottom: 2%;
+}
 main section div .columna-1 {
   padding: 2%;
 }
@@ -212,6 +214,13 @@ main section div .columna-1 .link-newsletters {
 .body-news-individuales {
   background-color: #D9D7F1;
 }
+.body-news-individuales main .news-ind-div1 {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1em;
+  border-bottom: 1em solid #874F9D;
+  margin-bottom: 2%;
+}
 .body-news-individuales main section div .columna-news .preguntas-news {
   text-align: center;
   font-weight: bold;
@@ -223,13 +232,13 @@ main section div .columna-1 .link-newsletters {
 .body-news-individuales main .boton-news-div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   margin-bottom: 5%;
   margin-top: 3%;
 }
 .body-news-individuales main .boton-news-div .boton-news-img:hover {
-  box-shadow: 0 4px 16px #b39ee2;
-  transition: all 0.2s ease;
+  transform: scale(1.2);
+  transition: all 1s;
 }
 
 /*contacto*/
@@ -324,7 +333,7 @@ p {
   font-size: 15px;
 }
 
-.newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post {
+.podcast-heading, .integrantes-heading, .contacto-heading, .heading-post {
   font-family: "Arimo", sans-serif;
   color: #874F9D;
   font-size: 32px;
@@ -335,6 +344,14 @@ p {
 .heading-t1 {
   font-weight: bolder;
   color: #3FB6B0;
+  font-size: 60px;
+  line-height: 0;
+  font-family: "Arimo", sans-serif;
+}
+
+.heading-t2 {
+  font-weight: bolder;
+  color: #874F9D;
   font-size: 60px;
   line-height: 0;
   font-family: "Arimo", sans-serif;
@@ -354,12 +371,12 @@ p::selection, strong::selection, i::selection, br::selection, h1::selection, h2:
 /*General media queries*/
 /*Main headings & texts size: mobile*/
 @media screen and (max-width: 480px) {
-  .newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading {
+  .integrantes-heading, .contacto-heading {
     font-size: 25px;
     text-align: center;
   }
 
-  .heading-t1 {
+  .heading-t1, .heading-t2 {
     font-size: 35px;
   }
 
@@ -382,7 +399,7 @@ p::selection, strong::selection, i::selection, br::selection, h1::selection, h2:
 }
 /*Main headings & texts size: tablet*/
 @media screen and (min-width: 481px) and (max-width: 980px) {
-  .newsletters-heading, .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post {
+  .integrantes-heading, .contacto-heading, .heading-post {
     font-size: 25px;
     text-align: center;
   }
@@ -391,7 +408,7 @@ p::selection, strong::selection, i::selection, br::selection, h1::selection, h2:
     font-size: 25px;
   }
 
-  .heading-t1 {
+  .heading-t1, .heading-t2 {
     font-size: 45px;
   }
 }
