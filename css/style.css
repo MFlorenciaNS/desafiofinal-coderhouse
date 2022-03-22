@@ -44,7 +44,7 @@ header .section-nav nav .navbar-femi .collapse-femi .navbar-nav .nav-item {
 }
 header .section-nav nav .navbar-femi .collapse-femi .navbar-nav .nav-item .text-menu {
   color: #874F9D;
-  font-family: "Arimo", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
   text-decoration: none;
 }
@@ -334,7 +334,7 @@ p {
 }
 
 .podcast-heading, .integrantes-heading, .contacto-heading, .heading-post {
-  font-family: "Arimo", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #874F9D;
   font-size: 32px;
   text-align: center;
@@ -346,7 +346,7 @@ p {
   color: #3FB6B0;
   font-size: 60px;
   line-height: 0;
-  font-family: "Arimo", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .heading-t2 {
@@ -354,11 +354,11 @@ p {
   color: #874F9D;
   font-size: 60px;
   line-height: 0;
-  font-family: "Arimo", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .newsletters-heading-2, .integrantes-heading-2 {
-  font-family: "Arimo", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 28px;
   color: #4FAC24;
 }
