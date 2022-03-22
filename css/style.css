@@ -78,6 +78,10 @@ footer .social-media {
 footer .social-media .logo-social {
   width: 95%;
 }
+footer .social-media .logo-social:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
 @media screen and (max-width: 480px) {
   footer .footer-text {
     font-size: 13px;

@@ -11,6 +11,10 @@ footer{
         margin: 1%;
         .logo-social{
             width: 95%;
+            &:hover{               
+            transform: scale(1.1);
+            transition: all 1s;
+            }
         }
     }
     
@@ -33,11 +37,10 @@ footer{
 
     /*Footer: tablet*/
     @media screen and (min-width: 481px) and (max-width: 980px){
-    .logo-social{
-        width: 85%;
+        .logo-social{
+            width: 85%;
+        }
     }  
-}
-
 }
 
 .footer-dev{
@@ -70,5 +73,3 @@ footer{
       transform: scale(1);
     }
 }
-
-
