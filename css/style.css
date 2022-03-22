@@ -236,6 +236,14 @@ main section div .columna-1 .link-newsletters {
   margin-bottom: 5%;
   margin-top: 3%;
 }
+@media screen and (max-width: 480px) {
+  .body-news-individuales main .boton-news-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+  }
+}
 .body-news-individuales main .boton-news-div .boton-news-img:hover {
   transform: scale(1.2);
   transition: all 1s;
