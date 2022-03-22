@@ -1,8 +1,16 @@
 @import '../base/mixins';
+@import '../base/variables';
 
 /*quienes somos*/
 
 main{
+    .equipo-div1{
+        display: flex;
+        align-items: baseline;
+        margin-top: 1em;
+        border-bottom: 1em solid $color-green-femi;
+        margin-bottom: 2%;
+    }
     section{
         div{
             div{
@@ -12,9 +20,16 @@ main{
                         width: 150px;
                         height: 150px;
                     }
+                    .img-integrante-sm{
+                        margin-bottom: 2%;
+                    }
                     .text-integrante{
                         margin: 0 2% 0 2%;
                         padding: 2%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                     }
                 }
             }
@@ -22,10 +37,10 @@ main{
     }
 }
 
-.integrante-1, .integrante-3, .integrante-5, .integrante-7{
-    background-color: #C0D9BE;
+.integrante{
+    background-color: $color-green-bg2;
+    &:hover{
+        background-color: $color-green-bg3;
+    }
 }
     
-.integrante-2, .integrante-4, .integrante-6{
-    background-color: #ADCEAE;
-}

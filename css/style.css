@@ -168,6 +168,13 @@ main .post-div2 .row-post div .post-image-a .post-image:hover {
 }
 
 /*quienes somos*/
+main .equipo-div1 {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1em;
+  border-bottom: 1em solid #3FB6B0;
+  margin-bottom: 2%;
+}
 main section div div .integrante {
   display: flex;
   flex-direction: center;
@@ -178,16 +185,22 @@ main section div div .integrante .image-integrante {
   width: 150px;
   height: 150px;
 }
+main section div div .integrante .img-integrante-sm {
+  margin-bottom: 2%;
+}
 main section div div .integrante .text-integrante {
   margin: 0 2% 0 2%;
   padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.integrante-1, .integrante-3, .integrante-5, .integrante-7 {
+.integrante {
   background-color: #C0D9BE;
 }
-
-.integrante-2, .integrante-4, .integrante-6 {
+.integrante:hover {
   background-color: #ADCEAE;
 }
 
@@ -341,7 +354,7 @@ p {
   font-size: 15px;
 }
 
-.podcast-heading, .integrantes-heading, .contacto-heading, .heading-post {
+.contacto-heading, .heading-post {
   font-family: "Inter", sans-serif;
   color: #874F9D;
   font-size: 32px;
@@ -371,7 +384,7 @@ p {
   color: #4FAC24;
 }
 
-p::selection, strong::selection, i::selection, br::selection, h1::selection, h2::selection, .heart::selection, a::selection {
+p::selection, strong::selection, i::selection, br::selection, h1::selection, h2::selection, .heart::selection, a::selection, img::selection {
   background-color: #874F9D;
   color: #D9D7F1;
 }
@@ -379,7 +392,7 @@ p::selection, strong::selection, i::selection, br::selection, h1::selection, h2:
 /*General media queries*/
 /*Main headings & texts size: mobile*/
 @media screen and (max-width: 480px) {
-  .integrantes-heading, .contacto-heading {
+  .contacto-heading {
     font-size: 25px;
     text-align: center;
   }

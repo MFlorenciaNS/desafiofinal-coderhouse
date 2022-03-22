@@ -1,3 +1,4 @@
+@import 'variables'; 
 * {
     margin:0;
     padding:0;
@@ -12,7 +13,7 @@ p {
     font-size: 15px;
 }
 
-.podcast-heading, .integrantes-heading, .contacto-heading, .heading-post {
+.contacto-heading, .heading-post {
     font-family: $font-heading;
     color: $color-violet-femi;
     font-size: 32px;
@@ -40,15 +41,15 @@ p {
     color: $color-green-yellow-femi;
 }
 
-p::selection, strong::selection, i::selection, br::selection,h1::selection, h2::selection, .heart::selection, a::selection{
-    background-color: #874F9D;
-    color: #D9D7F1;
+p::selection, strong::selection, i::selection, br::selection,h1::selection, h2::selection, .heart::selection, a::selection, img::selection{
+    background-color: $color-violet-femi;
+    color: $color-lilac-background;
   }
 
   /*General media queries*/
 /*Main headings & texts size: mobile*/
 @media screen and (max-width: 480px){
-     .integrantes-heading, .contacto-heading {
+    .contacto-heading {
         font-size: 25px;
         text-align: center; 
     }  
