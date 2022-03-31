@@ -1,14 +1,12 @@
 @import '../base/variables';
+@import '../base/extends';
 
 main{
     .index-section{
         margin-bottom: 3%;
         
         .index-div1{
-            display: flex;
-            align-items: baseline;
-            margin-top: 1em;
-            border-bottom: 1em solid $color-green-femi;
+            @extend %sub-headings;
             .index-text {
                 text-align: justify ;
             }
@@ -21,10 +19,7 @@ main{
     }
     .index-post-images {
         .post-div1{
-            display: flex;
-            align-items: baseline;
-            margin-top: 1em;
-            border-bottom: 1em solid $color-green-femi;
+            @extend %sub-headings;
         }
     }
     .post-div2{

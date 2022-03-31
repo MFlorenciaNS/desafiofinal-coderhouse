@@ -12,6 +12,14 @@ header {
   align-items: center;
 }
 
+main .contacto-div1, main .news-div1, main .equipo-div1, main .index-post-images .post-div1, main .index-section .index-div1 {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1em;
+  border-bottom: 1em solid #3FB6B0;
+  margin-bottom: 2%;
+}
+
 /*header*/
 header .section-nav {
   margin-bottom: 2%;
@@ -59,6 +67,14 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+main .contacto-div1, main .news-div1, main .equipo-div1, main .index-post-images .post-div1, main .index-section .index-div1 {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1em;
+  border-bottom: 1em solid #3FB6B0;
+  margin-bottom: 2%;
 }
 
 /*footer*/
@@ -132,14 +148,29 @@ footer .social-media .logo-social:hover {
     transform: scale(1);
   }
 }
-main .index-section {
-  margin-bottom: 3%;
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-main .index-section .index-div1 {
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .contacto-div1, main .news-div1, main .equipo-div1, main .index-post-images .post-div1, main .index-section .index-div1 {
   display: flex;
   align-items: baseline;
   margin-top: 1em;
   border-bottom: 1em solid #3FB6B0;
+  margin-bottom: 2%;
+}
+
+main .index-section {
+  margin-bottom: 3%;
 }
 main .index-section .index-div1 .index-text {
   text-align: justify;
@@ -148,12 +179,6 @@ main .index-section .index-div2 {
   margin-top: 0;
   padding-top: 3%;
   padding-bottom: 3%;
-}
-main .index-post-images .post-div1 {
-  display: flex;
-  align-items: baseline;
-  margin-top: 1em;
-  border-bottom: 1em solid #3FB6B0;
 }
 main .post-div2 {
   padding-top: 3%;
@@ -169,14 +194,28 @@ main .post-div2 .row-post div .post-image-a .post-image:hover {
   transition: all 1s;
 }
 
-/*quienes somos*/
-main .equipo-div1 {
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .contacto-div1, main .news-div1, main .equipo-div1, main .index-section .index-div1, main .index-post-images .post-div1 {
   display: flex;
   align-items: baseline;
   margin-top: 1em;
   border-bottom: 1em solid #3FB6B0;
   margin-bottom: 2%;
 }
+
+/*quienes somos*/
 main section div div .integrante {
   display: flex;
   flex-direction: center;
@@ -207,13 +246,27 @@ main section div div .integrante .text-integrante {
 }
 
 /*newsletters*/
-main .news-div1 {
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .contacto-div1, main .news-div1, main .index-section .index-div1, main .index-post-images .post-div1, main .equipo-div1 {
   display: flex;
   align-items: baseline;
   margin-top: 1em;
   border-bottom: 1em solid #3FB6B0;
   margin-bottom: 2%;
 }
+
 main section div .columna-1 {
   padding: 2%;
 }
@@ -265,13 +318,27 @@ main section div .columna-1 .link-newsletters {
 }
 
 /*contacto*/
-main .contacto-div1 {
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .contacto-div1, main .index-section .index-div1, main .index-post-images .post-div1, main .equipo-div1, main .news-div1 {
   display: flex;
   align-items: baseline;
   margin-top: 1em;
   border-bottom: 1em solid #3FB6B0;
   margin-bottom: 2%;
 }
+
 main section div .text-contacto {
   color: #874F9D;
   font-family: "Roboto", sans-serif;

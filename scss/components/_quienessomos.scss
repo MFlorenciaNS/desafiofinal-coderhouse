@@ -1,15 +1,12 @@
 @import '../base/mixins';
 @import '../base/variables';
+@import '../base/extends';
 
 /*quienes somos*/
 
 main{
     .equipo-div1{
-        display: flex;
-        align-items: baseline;
-        margin-top: 1em;
-        border-bottom: 1em solid $color-green-femi;
-        margin-bottom: 2%;
+        @extend %sub-headings;
     }
     section{
         div{
